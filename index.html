@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handy Apps Lab</title>
+  <meta name="description" content="Free, simple apps for phone and PC — try them before Google Play." />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#top"><span class="logo-mark">✦</span>Handy Apps Lab</a>
+      <nav>
+        <a href="#apps" data-t="navApps">Apps</a>
+        <a href="#install" data-t="navInstall">How to install</a>
+        <a href="#test" data-t="navTest">Become a tester</a>
+        <a href="privacy.html" data-keeplang data-t="navPrivacy">Privacy</a>
+      </nav>
+      <select id="lang" class="lang" aria-label="Language"></select>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <h1 data-t="heroTitle">Small apps that <span>make life easier</span></h1>
+      <p data-t="heroSub"></p>
+      <div class="pills">
+        <span class="pill" data-t="pFree"></span>
+        <span class="pill" data-t="pNoAds"></span>
+        <span class="pill" data-t="pPrivate"></span>
+        <span class="pill" data-t="pLangs"></span>
+      </div>
+    </div>
+
+    <section id="apps">
+      <div class="wrap">
+        <h2 data-t="appsTitle"></h2>
+        <p class="lead" data-t="appsLead"></p>
+        <div class="grid">
+          <article class="card" id="fixall-android">
+            <div class="app-head">
+              <img src="img/fixall.png" alt="Fix All" />
+              <div>
+                <h3>Fix All</h3>
+                <div class="tags"><span class="tag" data-t="tagAndroid"></span><span class="tag beta" data-t="tagBeta"></span></div>
+              </div>
+            </div>
+            <p data-t="fixMobDesc"></p>
+            <ul>
+              <li data-t="fixMob1"></li><li data-t="fixMob2"></li><li data-t="fixMob3"></li><li data-t="fixMob4"></li>
+            </ul>
+            <div class="ver"><span data-t="version"></span> 0.0.2</div>
+            <div class="btns">
+              <a class="btn primary" data-link="fixallAndroid" href="#">⬇ <span data-t="download"></span></a>
+              <a class="btn ghost" data-link="talkFixAll" href="#">💬 <span data-t="discuss"></span></a>
+            </div>
+          </article>
+
+          <article class="card" id="fixall-windows">
+            <div class="app-head">
+              <img src="img/fixall.png" alt="Fix All" />
+              <div>
+                <h3>Fix All</h3>
+                <div class="tags"><span class="tag" data-t="tagWindows"></span></div>
+              </div>
+            </div>
+            <p data-t="fixWinDesc"></p>
+            <ul>
+              <li data-t="fixWin1"></li><li data-t="fixWin2"></li><li data-t="fixWin3"></li><li data-t="fixWin4"></li>
+            </ul>
+            <div class="ver"><span data-t="version"></span> 1.1.0</div>
+            <div class="btns">
+              <a class="btn primary" data-link="fixallWindows" href="#">⬇ <span data-t="download"></span></a>
+              <a class="btn ghost" data-link="talkFixAll" href="#">💬 <span data-t="discuss"></span></a>
+            </div>
+          </article>
+
+          <article class="card" id="player">
+            <div class="app-head">
+              <img src="img/player.png" alt="Player" />
+              <div>
+                <h3>Player</h3>
+                <div class="tags"><span class="tag" data-t="tagAndroid"></span><span class="tag soon" data-t="tagSoon"></span></div>
+              </div>
+            </div>
+            <p data-t="playerDesc"></p>
+            <ul>
+              <li data-t="player1"></li><li data-t="player2"></li><li data-t="player3"></li>
+            </ul>
+            <div class="btns">
+              <span class="btn off" data-t="soon"></span>
+              <a class="btn ghost" data-link="talkPlayer" href="#">💬 <span data-t="discuss"></span></a>
+            </div>
+          </article>
+        </div>
+        <p class="note" data-t="discussNote"></p>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <h2 data-t="installTitle"></h2>
+        <p class="lead" data-t="installLead"></p>
+        <div class="grid">
+          <div class="card">
+            <h3 data-t="instAndroid"></h3>
+            <ol class="steps"><li data-t="a1"></li><li data-t="a2"></li><li data-t="a3"></li></ol>
+          </div>
+          <div class="card">
+            <h3 data-t="instWindows"></h3>
+            <ol class="steps"><li data-t="w1"></li><li data-t="w2"></li><li data-t="w3"></li></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="test">
+      <div class="wrap">
+        <h2 data-t="testTitle"></h2>
+        <p class="lead" data-t="testLead"></p>
+        <div class="card">
+          <ol class="steps"><li data-t="t1"></li><li data-t="t2"></li><li data-t="t3"></li></ol>
+          <div class="btns">
+            <a class="btn ghost" data-link="talkAll" href="#">💬 <span data-t="discuss"></span></a>
+            <a class="btn ghost" data-link="issues" href="#">🐞 <span data-t="reportBtn"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span data-t="footer"></span>
+      <a href="privacy.html" data-keeplang data-t="navPrivacy">Privacy</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>initLang();</script>
+</body>
+</html>
