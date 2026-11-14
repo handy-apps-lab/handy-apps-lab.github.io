@@ -4,8 +4,8 @@ const LANGS = { en: 'English', ro: 'Română', it: 'Italiano', fr: 'Français', 
 // Unde se descarcă (se schimbă aici, la fiecare versiune nouă)
 const REPO = 'https://github.com/handy-apps-lab/handy-apps-lab.github.io';
 const LINKS = {
-  fixallAndroid: REPO + '/releases/download/fixall-android-v0.0.2/FixAll-0.0.2.apk',
-  fixallWindows: REPO + '/releases/download/fixall-windows-v1.1.0/FixAll-Setup-1.1.0.exe',
+  fixallAndroid: REPO + '/releases/download/fixall-android-v0.0.3/FixAll-0.0.3.apk',
+  fixallWindows: REPO + '/releases/download/fixall-windows-v1.2.0/FixAll-Setup-1.2.0.exe',
   issues: REPO + '/issues',
   // discuții pe aplicație (GitHub Discussions, câte o categorie pe program)
   talkAll: REPO + '/discussions',
